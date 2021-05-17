@@ -1,4 +1,4 @@
-package com.test.colorchooser;
+package com.yordan.colorchooser;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
