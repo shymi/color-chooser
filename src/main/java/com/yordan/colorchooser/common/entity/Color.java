@@ -9,6 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 /**
  * Entity representing a single color value
@@ -26,7 +27,7 @@ public class Color {
 	private String label;
 
 	@Column(name = "COLOR_VALUE")
-	@NotBlank(message = "Label should not be blank")
+	@NotNull(message = "Label should not be blank")
 	private Integer colorValue;
 
 	@ManyToOne

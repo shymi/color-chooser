@@ -35,22 +35,11 @@ function disconnect() {
 	console.log("Disconnected");
 }
 
-function sendRGBMessage() {
-	stompClient.send("/app/rgb", {},
-		JSON.stringify({"red": redInput.value, "green": greenInput.value, "blue": blueInput.value}));
-}
-
-function showMessageOutput(messageOutput) {
-	var response = document.getElementById('response');
-	var p = document.createElement('p');
-	p.style.wordWrap = 'break-word';
-	p.appendChild(document.createTextNode(messageOutput.from + ": "
-		+ messageOutput.text + " (" + messageOutput.time + ")"));
-	response.appendChild(p);
-}
-
 function changeColor() {
-	sendRGBMessage();
+	stompClient.send(
+		"/app/rgb",
+		{},
+		JSON.stringify({"red": redInput.value, "green": greenInput.value, "blue": blueInput.value}));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
