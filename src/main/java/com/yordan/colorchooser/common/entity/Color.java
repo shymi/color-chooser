@@ -10,13 +10,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 
+/**
+ * Entity representing a single color value
+ */
 @Entity
 @Table(name = "COLOR")
 public class Color {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column
-	private long id;
+	private Long id;
 
 	@Column
 	@NotBlank(message = "Label should not be blank")
