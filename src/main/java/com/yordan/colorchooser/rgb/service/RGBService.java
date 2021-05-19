@@ -20,6 +20,10 @@ public class RGBService {
 		this.rgbDAO = rgbDAO;
 	}
 
+	/**
+	 * Update the RGB values in db with ones in dto
+	 * @param rgbValue the sent rgb values
+	 */
 	public void updateRGBValue(RGBDTO rgbValue) {
 		List<Color> rgbDBValue = rgbDAO.getCurrentRGBValue();
 
@@ -41,6 +45,10 @@ public class RGBService {
 		}
 	}
 
+	/**
+	 * get a list of current RGB values in db.
+	 * @return current state of RGB color.
+	 */
 	public RGBDTO getCurrentRGBValue() {
 		List<Color> rgbDBValue = rgbDAO.getCurrentRGBValue();
 

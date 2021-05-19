@@ -18,3 +18,4 @@ For the prototyping purposes(and dev laziness) a h2 database is used for the pro
 - Flyway is used to initialize the tables and fill them with data
 - Currently, only RGB colorspace values are populated, but the structure 
 is made so other color spaces can be easily added
+- To open the h2 console go to `localhost:8081` and click Connect

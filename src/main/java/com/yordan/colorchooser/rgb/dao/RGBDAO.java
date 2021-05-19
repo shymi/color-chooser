@@ -13,6 +13,10 @@ import java.util.List;
  */
 @Repository
 public interface RGBDAO extends CrudRepository<Color, Long> {
+	/**
+	 * Get current records for RGB
+	 * @return list of color records for RGB type.
+	 */
 	@Query(value = "SELECT c FROM Color c JOIN ColorType ct ON c.type = ct WHERE ct.name = 'RGB'")
 	List<Color> getCurrentRGBValue();
 }
