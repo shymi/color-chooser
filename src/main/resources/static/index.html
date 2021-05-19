@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Chooser</title>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="main-container centered">
+            <div class="slider-container">
+                <div class="single-slider">
+                    <div class="single-slider-input">
+                        <label for="red-input">R</label>
+                        <input onchange="changeColor()" type="range" min="0" max="255" value="0" class="slider" id="red-input">
+                    </div>
+                    <div class="single-slider-range-lbl">
+                        <span>0</span>
+                        <span>255</span>
+                    </div>
+                </div>
+
+                <div class="single-slider">
+                    <div class="single-slider-input">
+                        <label for="green-input">G</label>
+                        <input onchange="changeColor()" type="range" min="0" max="255" value="0" class="slider" id="green-input">
+                    </div>
+                    <div class="single-slider-range-lbl">
+                        <span>0</span>
+                        <span>255</span>
+                    </div>
+                </div>
+
+                <div class="single-slider">
+                    <div class="single-slider-input">
+                        <label for="blue-input">B</label>
+                        <input onchange="changeColor()" type="range" min="0" max="255" value="0" class="slider" id="blue-input">
+                    </div>
+                    <div class="single-slider-range-lbl">
+                        <span>0</span>
+                        <span>255</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div id="box" class="box" style="background-color: rgb(0, 0, 0);"></div>
+            </div>
+        </div>
+    </body>
+</html>

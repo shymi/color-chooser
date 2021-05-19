@@ -1,4 +1,4 @@
-package com.test.colorchooser;
+package com.yordan.colorchooser;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
